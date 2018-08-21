@@ -21,7 +21,7 @@ body{
 		background-color: #000095;
 	}
 	.button {
-	    background-color: #4CAF50; 
+	    background-color: #000032;
 	    border: none;
 	    color: white;
 	    padding: 5px 10px;
@@ -43,7 +43,7 @@ body{
 		margin: 0 0;
 	}
 	nav{
-		text-align:left;
+		text-align:center;
 		color:#000095; 
 		background-color:#eef3F8; 
 		margin-top:4px; 
@@ -52,6 +52,12 @@ body{
 		font-size:80%; 
 		border-top:5px solid; 
 		border-bottom:5px solid; 
+	}
+	nav li{
+		display: inline;
+		list-style-type: none;
+		padding-right:65px;
+		padding-left: 45px;
 	}
 	.content{
 		background-color:#EEEEEE;
@@ -62,6 +68,7 @@ body{
 		float:center;
 		border-collapse: separate;
 		border-spacing: 5px;
+		margin: 0 auto;	
 	}
 	th{
 		background-color:#eef3F8; 
@@ -85,12 +92,21 @@ body{
 		background-color:#000095;
 		clear:both;
 		text-align:center;
+		color:#EEEEEE;
 	}
-	@media(max-width: 767px){
-		.warpper{
-			margin:0 7px;
+
+@media screen and (max-width: 480px){
+		.wrapper{
+			margin:0 800px;
+		}
+		nav{
+			background-color:#E8E8E8;
+
 		}
 		nav li{
 			display: block;
+			padding-right: 0px;
+			padding-left: 0px;	
 		}
 	}
+}
